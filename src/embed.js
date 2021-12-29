@@ -1,7 +1,6 @@
 /* eslint-disable quotes */
 function helpEmbed() {
   return {
-    embed: {
       title: 'Welcome to Trident! 🔱',
       description:
         `I'm here to explain how you can save your address for the whitelist!`,
@@ -9,7 +8,7 @@ function helpEmbed() {
       fields: [
         {
           name: 'Calling the right command',
-          value: 'To save your address all you have to do is call `!trident save-address` followed by your address!'
+          value: 'To save your address all you have to do is call `!triton save-address` followed by your address!'
         },
         {
           name: 'Example:',
@@ -23,34 +22,31 @@ function helpEmbed() {
       timestamp: new Date(),
       footer: {
         text: 'https://twitter.com/TridentDAO',
-      },
-    },
-  }
+      }
+    }
 }
 
 function walletWarningEmbed() {
   return {
-    embed: {
       title: 'Warning 🚨',
       description:
-        'You are using the `!trident save-address` command incorrectly!',
+        'You are using the `!triton save-address` command incorrectly!',
       color: 16769024,
       fields: [
         {
-          name: '`!trident save-address <address>`',
+          name: '`!triton save-address <address>`',
           value:
-            'Correct usage of this command requires you to add your Harmony wallet address. Please refer to `!trident help` if you need more information.',
+            'Correct usage of this command requires you to add your Harmony wallet address. Please refer to `!triton help` if you need more information.',
         }
       ],
       timestamp: new Date(),
       footer: {
         text: 'https://twitter.com/TridentDAO',
-      },
-    },
+      }
   }
 }
 
 module.exports = {
-  helpEmbed,
-  walletWarningEmbed
+  walletWarningEmbed,
+  helpEmbed
 }

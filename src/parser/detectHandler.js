@@ -7,7 +7,7 @@ module.exports = function detectHandler(message) {
 
   const [requestedNamespace, requestedHandler] = message.split(' ')
   // If it's not a flag, we can safely ignore this command.
-  if (!requestedNamespace.includes('!trident')) {
+  if (!requestedNamespace.includes('!triton')) {
     return noop()
   }
 

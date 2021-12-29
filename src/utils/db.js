@@ -18,7 +18,8 @@ async function dbHandler(message, address) {
     if (erro) {
       console.log(erro)
     }
-  })
+  }).clone().catch(function(err){ console.log(err)})
+
   resultPromise = await createOrUpdate(searchParameter, resultPromise, document, modelFound)
   return resultPromise
 }

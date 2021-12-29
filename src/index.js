@@ -11,14 +11,18 @@ require('./db/connection')
 dotenv.config()
 // Sentry.init({ dsn: environment('SENTRY_DSN') })
 
-const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
+const client = new Discord.Client({
+  intents: [
+      "GUILDS",
+      "GUILD_MESSAGES"
+  ]})
 
 client.on('ready', () => {
   log(`Bot successfully started as ${client.user.tag} 🔱`)
 })
 
 
-client.on('message', (message) => {
+client.on('messageCreate', (message) => {
   if (message.author.bot) return
   try {
     const handler = detectHandler(message.content)

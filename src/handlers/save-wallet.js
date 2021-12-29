@@ -16,11 +16,11 @@ module.exports = async function save_wallet(message) {
     try {
       const oneAddress = web3.utils.toChecksumAddress(rawAddress)
       dbHandler(message, oneAddress)
-      message.channel.send(`<@${message.author.id}> wallet address succesfully saved.`)
+      message.reply(`<@${message.author.id}> wallet address succesfully saved.`)
       return
     } catch(err) {
       error(err)
-      message.channel.send(walletWarningEmbed())
+      message.reply({ embeds: [walletWarningEmbed()] })
     }
   }
 }
