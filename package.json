@@ -1,0 +1,26 @@
+{
+  "name": "trident-bot",
+  "version": "1.0.0",
+  "description": "a discord bot to save addresses to a database",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarode/tridentBot.git"
+  },
+  "author": "Jasper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yarode/tridentBot/issues"
+  },
+  "homepage": "https://github.com/yarode/tridentBot#readme",
+  "dependencies": {
+    "discord.js": "^13.4.0",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.1.4",
+    "web3": "^1.6.1"
+  }
+}
