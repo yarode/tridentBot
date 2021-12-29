@@ -12,7 +12,7 @@ function helpEmbed() {
         },
         {
           name: 'Example:',
-          value: '`!trident save-address 0x0000000000000000000000000000000000000000`',
+          value: '`!triton save-address 0x0000000000000000000000000000000000000000`',
         },
         {
           name: `That's all!`,
