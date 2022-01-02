@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a discord bot to save addresses to a database",
   "engines": {
-      "node": "16.9.0"
+    "node": "16.9.0"
   },
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,8 @@
   "dependencies": {
     "discord.js": "^13.4.0",
     "dotenv": "^10.0.0",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.4",
     "web3": "^1.6.1"
   }
 }
