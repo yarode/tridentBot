@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a discord bot to save addresses to a database",
   "engines": {
-    "node": "14.x"
+      "node": "16.9.0"
   },
   "main": "src/index.js",
   "scripts": {
